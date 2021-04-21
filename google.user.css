@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name         Dark Google by DM
+@name         Dark Google by DM--MD
 @version      7.28.1 MD
 @description  Dark mode for Google Search
 @namespace    https://github.com/moosedookie
@@ -3687,6 +3687,29 @@ regexp("https://images.google.com/") {
 
     .WpKAof {
         color: #2895ff;
+    }
+
+    .FalWJb {
+        background: #272727;
+    }
+
+    .mfMhoc {
+        color: #c1c1c1;
+    }
+
+    .MXl0lf {
+        background: #272727;
+        color: #c1c1c1;
+    }
+
+    .MXl0lf:hover {
+        background: linear-gradient(to top, #181818, #666666) !important;
+        color: #c1c1c1;
+    }
+
+    .obe4Gd:hover {
+        background: linear-gradient(to top, #181818, #666666) !important;
+        color: #c1c1c1;
     }
 }
 
