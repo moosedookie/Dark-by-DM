@@ -5438,3 +5438,23 @@ url-prefix("https://accounts.google.com") {
         background: #1f1f1f;
     }
 }
+@-moz-document url-prefix("https://ogs.google.com/u/0/widget/app"), url-prefix("https://ogs.google.com/widget/app/so"), url-prefix("https://ogs.google") {
+    /* New Pop-up */
+    .EHzcec {
+        background: #282828 !important;
+    }
+    .Rq5Gcb {
+        color: #ccc !important;
+    }
+    .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb {
+        background: #444 !important;
+    }
+    .NQV3m {
+        background: #444 !important;
+        color: #ccc !important;
+        border: none !important;
+    }
+    .dGrefb {
+        border-bottom: 1px solid #444 !important;
+    }
+}
