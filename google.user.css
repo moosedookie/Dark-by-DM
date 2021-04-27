@@ -2512,6 +2512,7 @@ regexp("https://images.google.com/") {
 	.F9PbJd {
 		background-color: #292929;
 		border: 1px solid #292929;
+		color: #c1c1c1;
 	}
 	.WGvvNb {
 		color: #bec0c1;
@@ -2913,7 +2914,9 @@ regexp("https://images.google.com/") {
 	.EsIlz {
 		background: #272727;
 	}
-	.WGwSK {
+	.WGwSK,
+	.SPmIAf,
+	.w6PoOe {
 		color: #c1c1c1;
 	}
 	.WGYX8,
@@ -3040,7 +3043,8 @@ regexp("https://images.google.com/") {
 	}
 	.nZWEZc .ttwCMe,
 	.Z8r5Gb,
-	.Ea7JLb {
+	.Ea7JLb,
+	.ECgenc {
 		background-color: #272727;
 	}
 	.oyj2db,
