@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name         Dark Google by DM--MD
-@version      7.28.1
-@description  Dark mode for Google Search
+@name         Dark Google by MD
+@version      1.10.1
+@description  Dark mode for Google Search based on DM v7.28.1
 @namespace    https://github.com/moosedookie
 @author       Denis Mignanelli, moosedookie
 @homepageURL  https://github.com/moosedookie/Dark-by-DM
@@ -27,6 +27,7 @@ regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|searc
 regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
 regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*"),
 regexp("https://images.google.com/") {
+	/*Main Code*/
 	html {
 		background: #1f1f1f;
 	}
@@ -3067,7 +3068,9 @@ regexp("https://images.google.com/") {
 		color: inherit;
 	}
 }
-@-moz-document url-prefix("https://accounts.google.com") {
+@-moz-document url-prefix("https://accounts.google.com"),
+url-prefix("https://accounts.google.com/signin/"), {
+	/*Accounts Code*/
 	.VmOpGe {
 		background: #1f1f1f;
 	}
@@ -3226,12 +3229,124 @@ regexp("https://images.google.com/") {
 	}
 	.WF4CUc,
 	.o5GQac img {}
+	.VmOpGe {
+		background: #1f1f1f;
+	}
+	.zW5vrf .riddkc {
+		color: #c1c1c1;
+	}
+	.RAYh1e.qmmlRd {
+		width: 450px;
+		background: #292929;
+		border-color: #292929;
+	}
+	.H2SoFe * {
+		color: #cbcbcb;
+	}
+	.zW5vrf .to0cd {
+		color: #aaaaaa;
+	}
+	.FPFGmf > .znIWoc:only-child:before,
+	.FPFGmf > .znIWoc:after {
+		border-bottom: 1px solid #4b4b4b;
+	}
+	.dU0W2d {
+		border-bottom: 1px solid #444444;
+	}
+	.vR13fe[role="button"]:hover,
+	.vR13fe[role="link"]:hover {
+		background: #2c2c2c;
+	}
+	.DRS7Fe a {
+		color: #42a5e1;
+	}
+	.jgvuAb.iWO5td .ncFHed {
+		opacity: 1;
+		background: #2c2c2c;
+	}
+	.ncFHed .MocG8c.KKjvXb {
+		background-color: #393939;
+	}
+	.H2SoFe ~ .nY5oDd .RUor5 > :last-child {
+		margin-bottom: 0;
+		color: #a6b4bd;
+	}
+	.H2SoFe ~ .nY5oDd .RUor5 > :first-child {
+		color: #b3c1ce;
+	}
+	.H2SoFe ~ .nY5oDd .jE5rrf {
+		color: #c2c9dc;
+	}
+	.H2SoFe ~ .nY5oDd {
+		background: #232323;
+	}
+	#irc_bg {
+		background-color: #2a2a2a;
+	}
+	.FqnKTc {
+		border-left: 1px solid #4c4c4c;
+	}
+	.uzjuFc {
+		border: 1px solid #333333;
+	}
+	.PNyWAd {
+		color: #b8bfc7;
+	}
+	.NZmxZe {
+		color: #afafaf;
+	}
+	.ZxXxWb {
+		border-bottom: 1px solid #353535;
+	}
+	.ZxXxWb .kHn9Lb {
+		color: #c6cdd6;
+	}
+	.d2laFc .w1I7fb {
+		color: #adb5bb;
+	}
+	.d2laFc .wLBAL {
+		color: #96999c;
+	}
+	.OVnw0d > .SmR8:only-child:before,
+	.OVnw0d > .SmR8:after {
+		border-bottom: 1px solid #353535;
+	}
+	.lCoei[role="button"]:hover,
+	.lCoei[role="link"]:hover {
+		background: #181717;
+	}
+	.N3Hzgf .snByac {
+		background: #292929;
+		color: #b7bec3;
+	}
+	.N3Hzgf .zHQkBf {
+		color: #c7cad4;
+	}
+	.N3Hzgf .mIZh1c,
+	.A3sRAb .mIZh1c {
+		border: 1px solid #4e4e4e;
+	}
+	.s2n8Rd .wLBAL {
+		color: #aeb7bd;
+	}
+	.A3sRAb .zHQkBf {
+		color: #cfd1d6;
+	}
+	.ze9ebf .zHQkBf {
+		color: #c1c1c1;
+	}
+	.YZrg6 {
+		background-color: #313131;
+		background: #313131;
+		border: 1px solid #c1c1c1;
+	}
 }
 @-moz-document regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?."),
 regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
 regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
 regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
 regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*") {
+	/*Old/duplicate code that needs to be cleaned up and merged with main code section.*/
 	body {
 		background: #1f1f1f;
 	}
@@ -5133,74 +5248,12 @@ regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*") 
 		color: #cecece;
 	}
 }
-@-moz-document url-prefix("https://accounts.google.com") {
-	.VmOpGe {
-		background: #1f1f1f;
-	}
-	.zW5vrf .riddkc {
-		color: #c1c1c1;
-	}
-	.RAYh1e.qmmlRd {
-		width: 450px;
-		background: #292929;
-		border-color: #292929;
-	}
-	.H2SoFe * {
-		color: #cbcbcb;
-	}
-	.zW5vrf .to0cd {
-		color: #aaaaaa;
-	}
-	.FPFGmf > .znIWoc:only-child:before,
-	.FPFGmf > .znIWoc:after {
-		border-bottom: 1px solid #4b4b4b;
-	}
-	.dU0W2d {
-		border-bottom: 1px solid #444444;
-	}
-	.vR13fe[role="button"]:hover,
-	.vR13fe[role="link"]:hover {
-		background: #2c2c2c;
-	}
-	.DRS7Fe a {
-		color: #42a5e1;
-	}
-	.jgvuAb.iWO5td .ncFHed {
-		opacity: 1;
-		background: #2c2c2c;
-	}
-	.ncFHed .MocG8c.KKjvXb {
-		background-color: #393939;
-	}
-	.H2SoFe ~ .nY5oDd .RUor5 > :last-child {
-		margin-bottom: 0;
-		color: #a6b4bd;
-	}
-	.H2SoFe ~ .nY5oDd .RUor5 > :first-child {
-		color: #b3c1ce;
-	}
-	.H2SoFe ~ .nY5oDd .jE5rrf {
-		color: #c2c9dc;
-	}
-	.H2SoFe ~ .nY5oDd {
-		background: #232323;
-	}
-	#irc_bg {
-		background-color: #2a2a2a;
-	}
-	.FqnKTc {
-		border-left: 1px solid #4c4c4c;
-	}
-	.uzjuFc {
-		border: 1px solid #333333;
-	}
-}
 @-moz-document regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?."),
 regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
 regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
 regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
 regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*") {
-	/*Anatoliy.s.spb code*/
+	/*Anatoliy.s.spb code ...not really sure what this is and may remove in the future.*/
 	#rhs .cVqrTe {
 		border-color: #1f1f1f;
 	}
@@ -5309,75 +5362,8 @@ regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*") 
 		color: #cccccc;
 	}
 }
-@-moz-document regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?."),
-regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
-regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
-regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
-regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/_/chrome/newtab\\?.*") {
-	/*Scrollbar by jaaneh */
-	::-webkit-scrollbar-track-piece {
-		background-color: #232323;
-		-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0) !important;
-		border-radius: 0 !important;
-		border: none !important;
-	}
-	::-webkit-scrollbar {
-		width: 5px;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #323232;
-	}
-	::-webkit-scrollbar-thumb:hover {
-		background: #404040;
-	}
-}
-@-moz-document url-prefix("https://accounts.google.com/signin/"),
-url-prefix("https://accounts.google.com") {
-	.PNyWAd {
-		color: #b8bfc7;
-	}
-	.NZmxZe {
-		color: #afafaf;
-	}
-	.ZxXxWb {
-		border-bottom: 1px solid #353535;
-	}
-	.ZxXxWb .kHn9Lb {
-		color: #c6cdd6;
-	}
-	.d2laFc .w1I7fb {
-		color: #adb5bb;
-	}
-	.d2laFc .wLBAL {
-		color: #96999c;
-	}
-	.OVnw0d > .SmR8:only-child:before,
-	.OVnw0d > .SmR8:after {
-		border-bottom: 1px solid #353535;
-	}
-	.lCoei[role="button"]:hover,
-	.lCoei[role="link"]:hover {
-		background: #181717;
-	}
-	.N3Hzgf .snByac {
-		background: #292929;
-		color: #b7bec3;
-	}
-	.N3Hzgf .zHQkBf {
-		color: #c7cad4;
-	}
-	.N3Hzgf .mIZh1c,
-	.A3sRAb .mIZh1c {
-		border: 1px solid #4e4e4e;
-	}
-	.s2n8Rd .wLBAL {
-		color: #aeb7bd;
-	}
-	.A3sRAb .zHQkBf {
-		color: #cfd1d6;
-	}
-}
 @-moz-document url-prefix("https://contacts.google.com/") {
+	/*Contacts Code*/
 	body {
 		background-color: #1f1f1f;
 		color: #efefef;
@@ -5567,8 +5553,9 @@ url-prefix("https://accounts.google.com") {
 }
 @-moz-document url-prefix("https://ogs.google.com/u/0/widget/app"),
 url-prefix("https://ogs.google.com/widget/app/so"),
-url-prefix("https://ogs.google") {
-	/* New Pop-up */
+url-prefix("https://ogs.google"),
+url-prefix("https://mail.google.com") {
+	/* Google pop-up/drop-down for apps*/
 	.EHzcec {
 		background: #282828 !important;
 	}
