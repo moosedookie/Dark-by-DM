@@ -3069,7 +3069,7 @@ regexp("https://images.google.com/") {
 	}
 }
 @-moz-document url-prefix("https://accounts.google.com"),
-url-prefix("https://accounts.google.com/signin/"), {
+url-prefix("https://accounts.google.com/signin/") {
 	/*Accounts Code*/
 	.VmOpGe {
 		background: #1f1f1f;
