@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Dark Google by MD
-@version      1.10.1
+@version      1.10.2
 @description  Dark mode for Google Search based on DM v7.28.1
 @namespace    https://github.com/moosedookie
 @author       Denis Mignanelli, moosedookie
@@ -3066,6 +3066,9 @@ regexp("https://images.google.com/") {
 	.fUflyc,
 	.cROF7c {
 		color: inherit;
+	}
+	.WggQGd {
+		color: #c1c1c1;
 	}
 }
 @-moz-document url-prefix("https://accounts.google.com"),
